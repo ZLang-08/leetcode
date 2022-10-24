@@ -14,7 +14,8 @@ class Solution {
     public String longestCommonPrefix(String str1, String str2 ) {
         int minLen = Math.min(str1.length(), str2.length());
         int index = 0;
-        while(index < minLen && str1.charAt(index++) == str2.charAt(index++)) {
+        while(index < minLen && str1.charAt(index) == str2.charAt(index)) {
+            index += 1;
 
         }
 
