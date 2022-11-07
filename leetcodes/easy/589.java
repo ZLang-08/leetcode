@@ -33,9 +33,6 @@ class Node {
 class Solution {
      List<Integer> list = new ArrayList<>();
     public List<Integer> preorder(Node root) {
-        if(root == null) {
-            return null;
-        }
         help(root);
         return list;
     }
